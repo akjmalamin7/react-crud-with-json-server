@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import Input from "../input/Input";
 import Select from "../select/Select";
-import { SELECT } from "../styled/input";
 
 const TABLEWRAPPER = styled.div`
   margin-top: 50px;
@@ -13,12 +12,14 @@ const TABLE = styled.table`
   margin-bottom: 1rem;
   background-color: transparent;
   border-collapse: collapse;
+  border: 1px solid rgba(181, 52, 113,.05);
   & thead {
-    background: rgba(109, 33, 79, 1);
+    background: rgba(179, 55, 113,1.0);
     color: #fff;
     & tr th {
       padding: 12px 15px;
       text-align: left;
+      font-size:14px;
     }
     & tr th:last-child{
       text-align:right
@@ -33,7 +34,7 @@ const TABLE = styled.table`
     text-align:right
   }
   & tbody tr:nth-child(even) {
-    background: rgba(112, 111, 211, 0.05);
+    background: rgba(179,55,113,.05);
    
   }
 `;

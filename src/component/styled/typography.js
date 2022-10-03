@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 const generateFontColor =(color,alpha=1)=>{
-   if(color == 'light'){
+   if(color === 'light'){
     return `rgba(255,255,255,${Number(alpha)})`
    }else{
     return `rgba(30,39,46,${Number(alpha)})`

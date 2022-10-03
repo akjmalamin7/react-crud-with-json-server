@@ -29,7 +29,7 @@ const DescList = styled.ul`
     padding: 10px 20px;
   }
   & li:nth-child(odd) {
-    background: rgba(109, 33, 79, 0.05);
+    background:rgba(179,55,113,.05);
   }
 `;
 const GoBtn = styled.button`

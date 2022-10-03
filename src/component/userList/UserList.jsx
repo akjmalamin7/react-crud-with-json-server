@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import Table from "../table/Table";
 
 const UserList = () => {
   const ViewBtn = {
-    background: "rgba(22, 160, 133,1.0)",
+    background: "rgba(250, 130, 49,1.0)",
     color: "#fff",
     padding: "5px 8px",
     fontSize: "13px",
@@ -30,7 +30,7 @@ const UserList = () => {
   };
 
   const [users, setUsers] = useState([]);
-  const { id } = useParams();
+  // const { id } = useParams();
   useEffect(() => {
     loadUser();
   }, []);

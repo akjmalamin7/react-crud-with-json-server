@@ -5,9 +5,54 @@
       "username": "akjmalamin7",
       "email": "akjmalamin0@gmail.com",
       "phone": "01750825457",
-      "dob": "1999-12-20",
+      "dob": "2022-10-03",
       "blood": "O+",
       "id": 1
+    },
+    {
+      "name": "Siyam Ahmed",
+      "username": "san97",
+      "email": "san97@gmail.com",
+      "phone": "0178502458",
+      "dob": "2022-10-01",
+      "blood": "B+",
+      "id": 2
+    },
+    {
+      "name": "Estiak Ahmed",
+      "username": "estiakahmed97",
+      "email": "estiak97@gmail.com",
+      "phone": "(017) 508-2545",
+      "dob": "2022-10-13",
+      "blood": "B+",
+      "id": 3
+    },
+    {
+      "name": "Golam Azam",
+      "username": "golamazam",
+      "email": "golamazam@gmail.com",
+      "phone": "017852147851",
+      "dob": "2022-10-14",
+      "blood": "A+",
+      "id": 4
+    },
+    {
+      "name": "Diganta Hawlader",
+      "username": "digantahawlader",
+      "email": "digantahawlader@gmail.com",
+      "phone": "01785425421",
+      "dob": "2022-10-18",
+      "blood": "O+",
+      "id": 5
+    },
+    {
+      "name": "Umme Tamanna",
+      "username": "tamanna",
+      "email": "tamanna@gmaail.com",
+      "phone": "01785425784",
+      "dob": "2022-10-18",
+      "blood": "AB+",
+      "id": 6
     }
   ]
 }

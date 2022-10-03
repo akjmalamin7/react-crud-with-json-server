@@ -24,7 +24,7 @@ const SubmitBtnWrapper = styled.div`
   margin-top: 30px;
 `;
 const SubmitBtn = styled.button`
-  background: rgba(131, 52, 113, 1);
+  background: rgba(181, 52, 113,1.0);
   color: #fff;
   font-size: 14px;
   padding: 10px 0px;
@@ -49,13 +49,13 @@ const Update = () => {
     setUser({})
   };
 
-  useEffect(() => {
-    loadData();
-  }, []);
   const loadData = async () => {
-    const result = await axios.get(`http://localhost:5500/users/${id}`);
-    setUser(result.data);
-  };
+      const result = await axios.get(`http://localhost:5500/users/${id}`);
+      setUser(result.data);
+    };
+    useEffect(() => {
+      loadData();
+    }, []);
 
   return (
     <div>
