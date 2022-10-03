@@ -1,6 +1,6 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { NavLink} from "react-router-dom";
+import { api } from "../../helper/api";
 import Table from "../table/Table";
 
 const UserList = () => {
@@ -30,18 +30,17 @@ const UserList = () => {
   };
 
   const [users, setUsers] = useState([]);
-  // const { id } = useParams();
   useEffect(() => {
     loadUser();
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get("http://localhost:5500/users");
+    const result = await api.get({url:'users'})
     setUsers(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:5500/users/${id}`);
+    const result = await api.delete({url:`users/${id}`})
     loadUser();
   };
 

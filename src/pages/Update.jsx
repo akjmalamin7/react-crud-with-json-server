@@ -1,9 +1,9 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import Input from "../component/input/Input";
 import { Container } from "../component/styled/layout";
+import { api } from "../helper/api";
 
 const Form = styled.form`
   max-width: 700px;
@@ -44,13 +44,13 @@ const Update = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:5500/users/${id}`, user)
+     await api.put({url:`users/${id}`, body:user})
     navigate("/")
     setUser({})
   };
 
   const loadData = async () => {
-      const result = await axios.get(`http://localhost:5500/users/${id}`);
+      const result = await api.get({url:`users/${id}`});
       setUser(result.data);
     };
     useEffect(() => {

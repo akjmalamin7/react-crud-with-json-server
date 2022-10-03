@@ -6,6 +6,7 @@ const AddUser = React.lazy(() => import("../pages/AddUser"));
 const View = React.lazy(() => import("../pages/View"));
 const Update = React.lazy(() => import("../pages/Update"));
 const NotFound = React.lazy(() => import("../pages/NotFound"));
+
 const Routing = () => {
   return (
     <div>

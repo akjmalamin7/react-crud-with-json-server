@@ -17,7 +17,7 @@ const TABLE = styled.table`
     background: rgba(179, 55, 113,1.0);
     color: #fff;
     & tr th {
-      padding: 12px 15px;
+      padding:15px;
       text-align: left;
       font-size:14px;
     }

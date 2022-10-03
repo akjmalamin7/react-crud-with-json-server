@@ -1,9 +1,9 @@
-import axios from "axios";
 import React, { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Input from "../component/input/Input";
 import { Container } from "../component/styled/layout";
+import { api } from "../helper/api";
 
 const Form = styled.form`
   max-width: 700px;
@@ -44,7 +44,7 @@ const AddUser = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5500/users", user)
+    await api.post({url:'users', body:user})
     navigate("/")
     setUser("")
   };
