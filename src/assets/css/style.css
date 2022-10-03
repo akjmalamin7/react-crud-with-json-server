@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+
+    --xs: 10px;
+    --sm: 12px;
+    --md: 14px;
+    --lg: 14px;
+    --xl: 20px;
+    --xxl: 24px;
+    --xxxl: 40px;
+
+
+    --xsLh: 20px;
+    --smLh: 22px;
+    --mdLh: 24px;
+    --lgLh: 24px;
+    --xlLh: 30px;
+    --xxlLh: 34px;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+@media(min-width:768px) {
+    :root {
+        --xs: 12px;
+        --sm: 14px;
+        --lg: 16px;
+        --xl: 24px;
+        --xxl: 32px;
+        --xxxl: 48px;
+
+        --xsLh: 22px;
+        --smLh: 24px;
+        --lgLh: 26px;
+        --xlLh: 34px;
+        --xxlLh: 42px;
+    }
+
+    button {
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+@media(min-width:768px) {
+    :root {
+        --xl: 28px;
+        --xxl: 36px;
+        --xlLh: 38px;
+        --xxlLh: 46px;
+    }
+}
+
+
+
+
